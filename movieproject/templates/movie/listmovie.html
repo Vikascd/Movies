@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+ <body>
+        <H1> Movies List</H1>
+        {% if movies_list %}
+            <table border="1">
+                <thead>
+                    <th>Releasedate</th>
+                    <th>Name</th>
+                    <th>Actor</th>
+                    <th>Actress</th>
+                    <th>Ratings</th>
+
+                </thead>
+                {% for movie in movies_list %}
+                    <tr>
+                        <td>{{movie.Releasedate}}</td>
+                        <td>{{movie.Name}}</td>
+                        <td>{{movie.Actor}}</td>
+                        <td>{{movie.Actress}}</td>
+                        <td>{{movie.Ratings}}</td>
+                    </tr>
+                {% endfor %}
+            </table>
+        {% else %}
+
+        {% endif %}
+    </body>
+</html>
+

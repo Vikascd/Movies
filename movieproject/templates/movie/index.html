@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static "css/main.css" %}">
+    <link rel="icon" href="static/projectname/favicon.ico">
+</head>
+<body>
+    <div class="jumbotron" align="center">
+  <h1 class="display-4">BOX OFFICE</h1>
+  <p class="lead">You will find every movie in word here......</p>
+  <hr class="my-4">
+  <p>choose what you want to do..</p>
+  <p class="lead">
+    <a class="btn btn-dark btn-lg" href="/addmovie" role="button">Add movie</a>
+      <a class="btn btn-dark btn-lg" href="/listmovie" role="button">Movies list</a>
+  </p>
+</div>
+</body>
+</html>
